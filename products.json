@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Apple iPad Pro 11\" 256 GB",
+        "brand": "Apple",
+        "model": "iPad Pro 11\"",
+        "description": "The latest iPad Pro 11\" with advanced features and performance.",
+        "price": 45999.99,
+        "category_id": 4,
+        "stock": 50,
+        "images": [
+            {
+                "url": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-pro-storage-select-202405-11inch-spaceblack?wid=5120&hei=2880&fmt=p-jpg&qlt=95&.v=1713761937838"
+            },
+            {
+                "url": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-pro-glass-select-gallery-1-202405?wid=5120&hei=2880&fmt=p-jpg&qlt=95&.v=1713496483354"
+            }
+        ]
+    },
+    {
+        "name": "Samsung Galaxy Tab S9 Ultra 512 GB",
+        "brand": "Samsung",
+        "model": "Galaxy Tab S9 Ultra",
+        "description": "The latest Galaxy Tab S9 Ultra with advanced features and performance.",
+        "price": 29999.99,
+        "category_id": 4,
+        "stock": 50,
+        "images": [
+            {
+                "url": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/140271-1_large.jpg"
+            },
+            {
+                "url": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/140271-2_large.jpg"
+            }
+        ]
+    },
+    {
+        "name": "Lenovo Tab P11",
+        "brand": "Lenovo",
+        "model": "Tab P11",
+        "description": "The latest Tab P11 with advanced features and performance.",
+        "price": 14999.99,
+        "category_id": 4,
+        "stock": 50,
+        "images": [
+            {
+                "url": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/lenovo/thumb/137970-1-1_large.jpg"
+            },
+            {
+                "url": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/lenovo/thumb/137970-2-1_large.jpg"
+            }
+        ]
+    }
+]

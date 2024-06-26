@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  fastapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fastapi-container
+    ports:
+      - "8000:80"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=mysql+pymysql://admin:123456@db/coffee_shop
+    volumes:
+      - .:/code
+    networks:
+      - fastapi-network
+
+  db:
+    image: mysql:latest
+    container_name: mysql-container
+    ports:
+      - "3031:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: coffee_shop
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: 123456
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - fastapi-network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin-container
+    ports:
+      - "8080:80"
+    environment:
+      PMA_PORT: 3306
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: example
+    networks:
+      - fastapi-network
+
+volumes:
+  mysql-data:
+
+
+networks:
+  fastapi-network:
