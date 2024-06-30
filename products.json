@@ -1,53 +1,272 @@
 [
     {
+        "name": "Apple iPhone 15 Pro Max 256 GB",
+        "brand": "Apple",
+        "model": "15 Pro Max",
+        "description": "The latest iPhone with advanced camera features and performance.",
+        "price": 1299,
+        "rating": 4.9,
+        "category_id": 0,
+        "images": [
+            {
+                "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_120147514/fee_786_587_png/APPLE-iPhone-15-Pro-Max-256-GB-Ak%C4%B1ll%C4%B1-Telefon-Siyah-Titanium-MU773TU-A"
+            },
+            {
+                "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_120147505/fee_786_587_png/APPLE-iPhone-15-Pro-Max-256-GB-Ak%C4%B1ll%C4%B1-Telefon-Siyah-Titanium-MU773TU-A"
+            }
+        ],
+        "stock": 50
+    },
+    {
+        "name": "Samsung Galaxy S24 256 GB",
+        "brand": "Samsung",
+        "model": "S24",
+        "description": "The latest Samsung with advanced camera features and performance.",
+        "price": 1099,
+        "rating": 4.5,
+        "category_id": 0,
+        "images": [
+            {
+                "url": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/1-119_large.jpg"
+            },
+            {
+                "url": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/5-49_large.jpg"
+            }
+        ],
+        "stock": 50
+    },
+    {
+        "name": "Apple iPhone 14 Plus",
+        "brand": "Apple",
+        "model": "14 Plus",
+        "description": "The latest iPhone with advanced camera features and performance.",
+        "price": 1099,
+        "rating": 4.7,
+        "category_id": 0,
+        "images": [
+            {
+                "url": "https://www.arcelik.com.tr/media/resize/9231421600_LO2_20220914_135952.png/1000Wx1000H/image.webp"
+            },
+            {
+                "url": "https://www.arcelik.com.tr/media/resize/9231421600_LO3_20220914_140027.png/2000Wx2000H/image.webp"
+            }
+        ],
+        "stock": 50
+    },
+    {
+        "name": "Apple MacBook Pro 14\"",
+        "brand": "Apple",
+        "model": "MacBook Pro 14\"",
+        "description": "The latest MacBook Pro with advanced features and performance.",
+        "price": 1899,
+        "rating": 4.9,
+        "category_id": 1,
+        "images": [
+            {
+                "url": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp14-spacegray-gallery1-202310?wid=4000&hei=3074&fmt=jpeg&qlt=90&.v=1697311136703"
+            },
+            {
+                "url": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp14-spacegray-gallery2-202310_GEO_TR?wid=4000&hei=3074&fmt=jpeg&qlt=90&.v=1698258961332"
+            }
+        ],
+        "stock": 50
+    },
+    {
+        "name": "Asus ROG Zephyrus G16",
+        "brand": "Asus",
+        "model": "ROG Zephyrus G16",
+        "description": "The latest Asus Gaming Laptop with advanced features and performance.",
+        "price": 2899,
+        "rating": 4.5,
+        "category_id": 1,
+        "images": [
+            {
+                "url": "https://dlcdnwebimgs.asus.com/gain/9E8B3BDF-4BB7-45CC-B7BE-F38810969B9A/w1000/h732"
+            },
+            {
+                "url": "https://dlcdnwebimgs.asus.com/gain/C7FA58DE-2368-4B53-90E4-6ED31C3F3C67/w1000/h732"
+            }
+        ],
+        "stock": 50
+    },
+    {
+        "name": "Apple MacBook Air 13\"",
+        "brand": "Apple",
+        "model": "MacBook Air 13\"",
+        "description": "The latest MacBook Air with advanced features and performance.",
+        "price": 1999,
+        "rating": 4.7,
+        "category_id": 1,
+        "images": [
+            {
+                "url": "https://www.beko.com.tr/media/resize/8904501600_LO1_20201217_125622.png/1000Wx1000H/image.webp"
+            },
+            {
+                "url": "https://www.beko.com.tr/media/resize/8904501600_LO2_20201217_125632.png/1000Wx1000H/image.webp"
+            }
+        ],
+        "stock": 50
+    },
+    {
+        "name": "Samsung QE 65Q70D 65inc 163 cm 4K UHD Smart QLED TV",
+        "brand": "Samsung",
+        "model": "QE 65Q70D",
+        "description": "The latest Samsung QLED TV with advanced features and performance.",
+        "price": 1699,
+        "rating": 4.6,
+        "category_id": 2,
+        "images": [
+            {
+                "url": "https://images.samsung.com/is/image/samsung/p6pim/in/qa65q70daulxl/gallery/in-qled-q70d-qa65q70daulxl-539990495?$2052_1641_PNG$"
+            },
+            {
+                "url": "https://images.samsung.com/is/image/samsung/p6pim/in/qa65q70daulxl/gallery/in-qled-q70d-qa65q70daulxl-539990480?$684_547_PNG$"
+            }
+        ],
+        "stock": 50
+    },
+    {
+        "name": "LG 65QNED756 65inc 165 cm 4K QNED TV",
+        "brand": "LG",
+        "model": "65QNED756",
+        "description": "The latest LG QNED TV with advanced features and performance.",
+        "price": 2199,
+        "rating": 4.7,
+        "category_id": 2,
+        "images": [
+            {
+                "url": "https://www.germanos.gr/images/type5/20422643/20422643_LG65QNED75665039039QNED4KSmartTV_medium_0.png"
+            },
+            {
+                "url": "https://www.germanos.gr/images/type5/20422643/20422643_LG65QNED75665039039QNED4KSmartTV_medium_1.png"
+            }
+        ],
+        "stock": 50
+    },
+    {
+        "name": "Philips Ambilight TV 65OLED808 65\"",
+        "brand": "Philips",
+        "model": "65OLED808",
+        "description": "The latest Philips TV with advanced features and performance.",
+        "price": 3699,
+        "rating": 4.8,
+        "category_id": 2,
+        "images": [
+            {
+                "url": "https://www.beko.com.tr/media/resize/9225301600_LO1_20230801_173508.png/1000Wx1000H/image.webp"
+            },
+            {
+                "url": "https://www.beko.com.tr/media/resize/9225301600_LO3_20230801_173746.png/2000Wx2000H/image.webp"
+            }
+        ],
+        "stock": 50
+    },
+    {
+        "name": "Sony Playstation 5 Slim Digital",
+        "brand": "Sony",
+        "model": "Playstation 5 Slim Digital",
+        "description": "The latest Sony Playstation 5 with advanced features and performance.",
+        "price": 499,
+        "rating": 4.8,
+        "category_id": 3,
+        "images": [
+            {
+                "url": "https://telaks.com.tr/wp-content/uploads/2023/03/33EDF42B-A228-4ECB-8E7E-3312D844CEDF.webp"
+            },
+            {
+                "url": "https://gmedia.playstation.com/is/image/SIEPDC/console-left_@1x?fmt=png-alpha&scl=1"
+            }
+        ],
+        "stock": 50
+    },
+    {
+        "name": "Microsoft Xbox Series X",
+        "brand": "Microsoft",
+        "model": "Xbox Series X",
+        "description": "The latest Xbox Series X with advanced features and performance.",
+        "price": 499,
+        "rating": 4.8,
+        "category_id": 3,
+        "images": [
+            {
+                "url": "https://img.pzrmcdn.com/mnresize/716/716/asset/889842640816/d05584e1-a0b0-43c4-2728-08d9243924b3/microsoftxboxseriesxoyunkonsolusiyah1tbmicrosofttrkiyegarantili-1.png"
+            },
+            {
+                "url": "https://www.arcelik.com.tr/media/resize/8905531600_OTH_20230516_091537.png/2000Wx2000H/image.webp"
+            }
+        ],
+        "stock": 50
+    },
+    {
+        "name": "Microsoft Xbox Series S",
+        "brand": "Microsoft",
+        "model": "Xbox Series S",
+        "description": "The latest Xbox Series S with advanced features and performance.",
+        "price": 369,
+        "rating": 4.7,
+        "category_id": 3,
+        "images": [
+            {
+                "url": "https://assets.xboxservices.com/assets/0b/28/0b2854b9-a7e7-47dd-b4f8-a371567854b2.png?n=Xbox-Series-S_Buy-Box_0_01_829x799.png"
+            },
+            {
+                "url": "https://images.migrosone.com/elektronik/product/39398151/39398151-f0c554-1650x1650.png"
+            }
+        ],
+        "stock": 50
+    },
+    {
         "name": "Apple iPad Pro 11\" 256 GB",
         "brand": "Apple",
         "model": "iPad Pro 11\"",
         "description": "The latest iPad Pro 11\" with advanced features and performance.",
-        "price": 45999.99,
+        "price": 1499,
+        "rating": 4.6,
         "category_id": 4,
-        "stock": 50,
         "images": [
             {
-                "url": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-pro-storage-select-202405-11inch-spaceblack?wid=5120&hei=2880&fmt=p-jpg&qlt=95&.v=1713761937838"
+                "url": "https://www.arcelik.com.tr/media/resize/8902171600_LO1_20200505_173739.png/1000Wx1000H/image.webp"
             },
             {
-                "url": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-pro-glass-select-gallery-1-202405?wid=5120&hei=2880&fmt=p-jpg&qlt=95&.v=1713496483354"
+                "url": "https://www.att.com/scmsassets/global/devices/tablets/apple/apple-ipad-pro-11-inch-2022/carousel/spacegray/spacegray-2.png"
             }
-        ]
+        ],
+        "stock": 50
     },
     {
         "name": "Samsung Galaxy Tab S9 Ultra 512 GB",
         "brand": "Samsung",
         "model": "Galaxy Tab S9 Ultra",
         "description": "The latest Galaxy Tab S9 Ultra with advanced features and performance.",
-        "price": 29999.99,
+        "price": 1290,
+        "rating": 4.5,
         "category_id": 4,
-        "stock": 50,
         "images": [
             {
-                "url": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/140271-1_large.jpg"
+                "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/2307/gallery/tr-galaxy-tab-s9-wifi-x710-sm-x710nzaatur-537327530?$650_519_PNG$"
             },
             {
-                "url": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/140271-2_large.jpg"
+                "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/2307/gallery/tr-galaxy-tab-s9-wifi-x710-sm-x710nzaatur-537327510?$684_547_PNG$"
             }
-        ]
+        ],
+        "stock": 50
     },
     {
         "name": "Lenovo Tab P11",
         "brand": "Lenovo",
         "model": "Tab P11",
         "description": "The latest Tab P11 with advanced features and performance.",
-        "price": 14999.99,
+        "price": 1099,
+        "rating": 4.6,
         "category_id": 4,
-        "stock": 50,
         "images": [
             {
-                "url": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/lenovo/thumb/137970-1-1_large.jpg"
+                "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_104869572/fee_786_587_png/LENOVO-Tab-P11-Pro-2.Nesil-8GB-Ram-256GB-SSD-11.2%22-Tablet-Gri-ZAB50094TR"
             },
             {
-                "url": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/lenovo/thumb/137970-2-1_large.jpg"
+                "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_104869567/fee_786_587_png/LENOVO-Tab-P11-Pro-2.Nesil-8GB-Ram-256GB-SSD-11.2%22-Tablet-Gri-ZAB50094TR"
             }
-        ]
+        ],
+        "stock": 50
     }
 ]

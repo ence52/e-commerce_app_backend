@@ -18,6 +18,7 @@ def create_product(db:Session,product:ProductCreateSchema):
         model = product.model,
         description = product.description,
         price = product.price,
+        rating = product.rating,
         category_id = product.category_id,
         stock= product.stock)
     db.add(db_product)

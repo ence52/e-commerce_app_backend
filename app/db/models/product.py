@@ -12,11 +12,12 @@ class ProductModel(Base,TimeStampMixin):
     model = Column(String(255),nullable=False)
     description = Column(Text)
     price = Column(Float(precision=2), nullable=False)
+    rating = Column(Float(precision=1), nullable=False)
     images = relationship("Image", order_by="Image.id", back_populates="product")
     category_id = Column(Integer, ForeignKey('categories.id'), nullable=False)
     category = relationship("CategoryModel", back_populates="products")
     stock= Column(Integer,nullable=False)
-    
+    cart_items = relationship('CartItemModel', back_populates='product')
 class Image(Base):
     __tablename__ = 'images'
     

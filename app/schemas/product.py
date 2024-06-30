@@ -17,6 +17,7 @@ class ProductBaseSchema(BaseModel):
     model: str
     description: str
     price: float
+    rating: float
     category_id: int
     images: List[ImageCreateSchema]
     stock: int
