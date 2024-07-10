@@ -1,4 +1,3 @@
-from typing import Union
 from app.api.v1 import cart, category, product, user
 from app.db.models.cart import CartModel
 from app.db.models.cart_item import CartItemModel

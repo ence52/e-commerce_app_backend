@@ -1,5 +1,5 @@
-from app.core.security import check_password
-from app.db.models.user import UserModel
+from app.core.security import verify_password
+from app.crud.user import get_user_by_email
 from app.db.session import SessionLocal
 from sqlalchemy.orm import Session
 
@@ -11,9 +11,9 @@ def get_db():
         db.close()
 
 def authenticate_user(db:Session,email:str,password:str):
-    user=db.query(UserModel).filter(UserModel.email==email).first()
+    user=get_user_by_email(db,email)
     if not user:
         return False
-    if not check_password(password,user.hashed_password):
+    if not verify_password(password,user.hashed_password):
         return False
     return user

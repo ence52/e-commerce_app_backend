@@ -3,8 +3,6 @@ import datetime
 from typing import List
 from fastapi import HTTPException,status
 from sqlalchemy.orm import Session
-
-from app.db.models.category import CategoryModel
 from app.db.models.product import Image, ProductModel
 from app.schemas.product import ProductCreateSchema, ProductUpdateSchema
 
@@ -54,6 +52,8 @@ def delete_product(db:Session,product_id):
 def get_all_products(db:Session):
     return db.query(ProductModel).all()
 
+def search_products_by_name(db:Session,text:str):
+    return db.query(ProductModel).filter(ProductModel.name.like(f'%{text}%')).all()
 
 
 def update_product(db:Session,product_id:int,product:ProductUpdateSchema):

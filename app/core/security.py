@@ -1,16 +1,15 @@
 from datetime import datetime, timedelta
-from typing import Optional
-
-import bcrypt
+from passlib.context import CryptContext
 import jwt
 
-
-SECRET_KEY = "ERKAN"
+SECRET_KEY = "%1+?52!!q"
 ALGORITHM= "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
-def create_access_token(data: dict, expires_delta : Optional[timedelta]=None):
+
+def create_access_token(data: dict, expires_delta: timedelta | None = None):
     to_encode = data.copy()
     if expires_delta:
         expire = datetime.now()+ expires_delta
@@ -21,7 +20,9 @@ def create_access_token(data: dict, expires_delta : Optional[timedelta]=None):
     encoded_jwt=jwt.encode(to_encode,SECRET_KEY,algorithm=ALGORITHM)
     return encoded_jwt
 
-def check_password (plain_password:str,hashed_password:str)->bool:
-    plain_password_bytes = plain_password.encode('utf-8')
-    hashed_password_bytes = hashed_password.encode('utf-8')
-    return bcrypt.checkpw(plain_password_bytes,hashed_password_bytes)
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+
+def get_password_hash(password):
+    return pwd_context.hash(password)
+

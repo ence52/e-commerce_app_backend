@@ -2,7 +2,7 @@
 
 from pydantic import BaseModel
 
-from app.schemas.product import ProductSchema
+from app.schemas.product import ProductDetailSchema
 
 
 class CartItemBaseSchema(BaseModel):

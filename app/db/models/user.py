@@ -1,7 +1,7 @@
-from datetime import datetime
+
 import bcrypt
-from sqlalchemy import Column, DateTime, Integer, String
-from app.core.security import check_password
+from sqlalchemy import Boolean, Column, Integer, String
+from app.core.security import verify_password
 from app.db.models.mixins import TimeStampMixin
 from app.db.session import Base
 from sqlalchemy.orm import relationship
@@ -13,6 +13,7 @@ class UserModel(Base,TimeStampMixin):
     name = Column(String(50))
     email = Column(String(60),unique=True,index=True)
     hashed_password = Column(String(64))
+    disabled = Column(Boolean,default=False)
 
     carts = relationship('CartModel', back_populates='users')
     
@@ -20,8 +21,8 @@ class UserModel(Base,TimeStampMixin):
     def set_password(self,password: str):
         self.hashed_password= hash_password(password)
 
-    def check_password(self,password :str)->bool:
-        return check_password(password,self.hashed_password)
+    def verify_password(self,password :str)->bool:
+        return verify_password(password,self.hashed_password)
 
 def hash_password(password:str)->str:
     password_bytes=password.encode('utf-8')

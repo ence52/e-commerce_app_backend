@@ -31,7 +31,16 @@ class ProductCreateSchema(ProductBaseSchema):
 class ProductUpdateSchema(ProductBaseSchema):
     pass
 
-class ProductSchema(ProductBaseSchema):
+class ProductSchema(BaseModel):
+    id:int
+    name: str
+    price: float
+    images: List[ImageCreateSchema]
+    class Config:
+        from_attributes = True
+
+
+class ProductDetailSchema(ProductBaseSchema):
     id: int
     created_at: datetime
     updated_at: datetime

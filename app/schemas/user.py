@@ -1,4 +1,3 @@
-
 from datetime import datetime
 from pydantic import BaseModel, EmailStr
 
@@ -6,6 +5,7 @@ from pydantic import BaseModel, EmailStr
 class UserBaseSchema(BaseModel):
     name: str
     email:EmailStr
+    disabled: bool
 
 class UserCreateSchema(UserBaseSchema):
     password: str
