@@ -1,7 +1,7 @@
 from typing import Annotated, List
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
-from app.crud.cart import add_item_to_cart, decrease_item_from_cart, empty_cart, get_cart_info_by_id, get_cart_item_count_by_id, get_cart_item_quantity_by_id, get_cart_items_by_user,   get_cart_total_price, remove_item_from_cart
+from app.crud.cart import add_item_to_cart, decrease_item_from_cart, empty_cart, get_cart_info_by_id, get_cart_item_count_by_user, get_cart_item_quantity_by_id, get_cart_items_by_user,   get_cart_total_price, remove_item_from_cart
 from app.crud.user import get_current_active_user
 from app.db.models.user import UserModel
 from app.db.session import SessionLocal
@@ -23,16 +23,16 @@ def get_db():
 def get_cart_info_by_id_endpoint(current_user: Annotated[UserModel, Depends(get_current_active_user)],db:Session=Depends(get_db)):
     return get_cart_info_by_id(db,current_user)
 
-@router.post('/items',response_model=List[ProductSchema])
-def get_cart_items_by_id_endpoint(current_user: Annotated[UserModel, Depends(get_current_active_user)],db:Session=Depends(get_db)):
+@router.get('/items',response_model=List[ProductSchema])
+def get_cart_items(current_user: Annotated[UserModel, Depends(get_current_active_user)],db:Session=Depends(get_db)):
     return get_cart_items_by_user(db=db,current_user=current_user)
 
-@router.post('/item_count',response_model=int)
-def get_cart_item_count_by_id_endpoint(current_user: Annotated[UserModel, Depends(get_current_active_user)],db:Session=Depends(get_db)):
-    return get_cart_item_count_by_id(db,current_user)
+@router.get('/item_count',response_model=int)
+def get_cart_item_count(current_user: Annotated[UserModel, Depends(get_current_active_user)],db:Session=Depends(get_db)):
+    return get_cart_item_count_by_user(db,current_user)
     
 
-@router.post('/total_price',response_model= float)
+@router.get('/total_price',response_model= float)
 def get_cart_total_price_endpoint(current_user: Annotated[UserModel, Depends(get_current_active_user)],db:Session=Depends(get_db)):
     total_price= get_cart_total_price(db,current_user)
     return total_price

@@ -16,6 +16,7 @@ class UserModel(Base,TimeStampMixin):
     disabled = Column(Boolean,default=False)
 
     carts = relationship('CartModel', back_populates='users')
+    favorites = relationship('FavoriteModel',back_populates='users')
     
 
     def set_password(self,password: str):

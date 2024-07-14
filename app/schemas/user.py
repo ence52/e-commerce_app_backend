@@ -21,3 +21,7 @@ class UserSchema(UserBaseSchema):
 class UserLoginSchema(BaseModel):
     email: EmailStr
     password: str
+
+class UserInfoSchema(BaseModel):
+    name:str
+    email:str

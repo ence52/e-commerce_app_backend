@@ -25,7 +25,7 @@ def get_cart_items_by_user(db:Session,current_user:UserModel):
               .all()
     return items
 
-def get_cart_item_count_by_id(db:Session,current_user:UserModel):
+def get_cart_item_count_by_user(db:Session,current_user:UserModel):
     cart = db.query(CartModel).filter(CartModel.user_id == current_user.id).first()
     if not cart:
         raise HTTPException(status_code=404, detail="Cart not found")
